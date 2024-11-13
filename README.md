@@ -60,7 +60,7 @@ Once done, close the simulation by going to Simulation → "Close Simulation".
 ![image](https://github.com/user-attachments/assets/c850506c-3f6e-4d6b-8574-939a914b2a5f)
 
 ## Verilog Code
-
+```
 module mux4_1(i,s,y);
 input [3:0]i;
 input[1:0]s;
@@ -74,10 +74,10 @@ case(s)
 default:y=4'b0;
 endcase
 endmodule
-
+```
 
 ## Testbench implementation
-
+```
 module mux4_1tb;
 reg [3:0]i;
 reg [1:0]s;
@@ -97,7 +97,7 @@ s=2'b11;
 $display("no value assigned");
 end
 endmodule
-
+```
 
 ## Sample Output
 
